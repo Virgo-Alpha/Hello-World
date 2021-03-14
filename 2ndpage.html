@@ -1,0 +1,119 @@
+<DOCTYPE:html>
+<html>
+<head><h1>Tables and forms</h1></head>
+<body>
+    <table>
+    <caption><h2>capture:</h2></caption>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Status</th>
+</tr>
+<tr>
+    <td>Benson King'ori</td>
+    <td>Consolata Mugure</td>
+    <td>George Ombetu</td>
+</tr>
+<tr>
+    <td>21</td>
+    <td>43</td>
+    <td>41</td>
+    <tr>
+        <td>single</td>
+        <td>Single</td>
+        <td>Married</td>
+    </tr>
+</tr>
+</table>
+   <p>
+       <form action="action_page.php" method="POST" autocomplete="on" name="Info" novalidate> <!--The input formaction attribute specifies the URL of the file that will process the input when the form is submitted-->
+        <label for="Username">Username</label><br><!---Label for and input id should be identical so that the 2 link up-->
+        <input type="text" id="Username" name="Username"> <!--The characters in a password field are masked (shown as asterisks or circles)--><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" required><br><br> <!--The input required attribute specifies that an input field must be filled out before submitting the form-->
+        <input type="submit" name="submit">
+        <input type="reset"> <!--If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.-->
+    </form>
+</p>
+<p>
+    <form name="Drop down list"> <!---This form gives options for one to choose from (select element)-->
+        <label for="gender">Sex</label>
+        <select id="gender" name="sex">
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other" selected>other</option> <!---Selected sets the option as default b4 selection of any of the options-->
+        </select>
+    </form><br><br>
+    
+    <form> <!--numeric input field-->
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"> <!--You can also set restrictions on what numbers are accepted.-->
+      </form><br>
+
+    <form name="Drop down list"> <!---This is a clown of the form above. I used it to illustrate size attribute which limits the visible options as well as selection of multiple options-->
+        <label for="gender">Sex</label>
+        <select id="gender" name="sex" size="2" multiple> <!---Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.-->
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other" selected>other</option> 
+        </select>
+   </form><br><br>
+
+   <!---Instead of the drop down list, one can use the datalist form-->
+   <form action="/action_page.php">
+    <input list="siblings" name="sibling">
+    <datalist id="siblings">
+      <option value="Gathoni">
+      <option value="Ian">
+      <option value="Joseph Thuo">
+      <option value="Brayo">
+      <option value="Vivian">
+    </datalist>
+    <input type="submit">
+  </form>
+  <br>
+
+   <form name="Radio buttons" multiple> <!--Radio buttons form--> 
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="male">male</label><br>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">female</label><br>
+       <input type="radio" id="other" name="gender" value="other" >
+       <label for="other">other</label><br>
+       <input type="reset">
+   </form><br>
+<p> I love:<br>
+   <form name="checklist">
+       <input type="checkbox" id="food" name="loves" value="food">
+       <label for="food">food</label><br>
+       <input type="checkbox" id="women" name="loves" value="women">
+       <label for="women">women</label><br>
+       <input type="checkbox" id="money" name="loves" value="money">
+       <label for="money">money</label><br>
+       <input type="reset">
+   </form>
+</p>
+   <h3>Text area</h3><!---The textarea element defines a multi-line input field.-->
+   <form name="multi lined text input area">
+        <fieldset> <!---used to group related data in a form.-->
+            <legend>Type here:</legend> <!--defines a caption for the <fieldset> element.-->
+        <textarea name="textarea" cols="30" rows="12">
+            I am awesome
+        </textarea> <!---Why is the input written in the code though?--> <br> <br>
+        <input type="submit" name="submit">
+         </fieldset>
+    <br><br>
+        <button type="button" onclick="alert('Mars, here we come')">Hello Mars!</button><!---Always specify the type attribute for the button element. Different browsers may use different default types for the button element.-->
+    </form><br>
+
+    <form action="/action_page.php">
+        <label for="search site">Search on this site:</label>
+        <input type="search" id="search site" name="search site">
+        <input type="submit" value="Submit">
+      </form><br> <br>
+      <video width="320" height="240" autoplay muted>
+          <source src="MyELVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.<!--The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.-->
+      </video>
+</p>
+</body>
