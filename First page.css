@@ -1,0 +1,83 @@
+/*CSS for First page*/
+/*set colors using colornames, HEX, hsl, or RGB*/
+/*for HEX put a # then six diigits, for hsl put a degree(out of 360) then two percentages and for RGB put 3 numbers for red, green and blue*/
+/*You don't have to cram the exact numbers because this text editor allows you to select from a range*/
+h1 {
+    background-color: #09041F; 
+    color: rgb(4, 4, 71); 
+    font-family: 'Times New Roman', Times, serif;
+     font-size: 350%;
+     font-style: italic; /*Aesthetically styles the text*/
+     text-transform: uppercase; /*Text-Transform Values
+     lowercase makes all of the letters in the selected text lowercase. uppercase makes all of the letters in the selected text uppercase. capitalize capitalizes the first letter of each word in the selected text. none leaves the text's case and capitalization exactly as it was entered.*/
+}
+
+body {
+font-family: serif, Georgia, 'Times New Roman', Times;
+font-size: 100%;
+}
+
+ #link1 { /*Put a # b4 an id to select it*/
+     color: rgb(13, 75, 13);
+     font-size: 150%;
+     font-weight: 600; /*font-weight bolds text for aesthetic value with no empahsis on the meaning. 400 is normal, 700 is bold; Other values are normal, bold and bolder*/
+}/*font size can be set using percentages, em, rem or pixels(px). 16px=1 em= 1 rem. Px r absolute thus not recommendable. Just use %s*/ 
+
+.interests { /*Put a . b4 a class to select it*/
+    background-color: hsl(288, 80%, 21%);
+}
+
+ h1, h2, h3, h5 { /*Select multiple tags but separate them witha comma*/
+    font-family: sans-serif, Arial, Helvetica ;
+} /*In the case of h1, this CSS line takes precedence over the one first written because it will be executed later i.e., code is executed line by line so the last to be written will be the one displayed*/
+/*1. Don't use more than three font types on a single web page
+    2. use the fonts consistently for the same content types eg, headings, paragraphs, image captions, 
+        3. 3. Combine a sans-serif headline with a serif paragraph*/
+
+ #link2 {
+     text-decoration: underline;
+ }
+
+ a {
+     text-decoration: none; /*Links are underlined by default in html so you need to set this propert to none to undo that*/
+ }
+
+ a:visited {
+        color: rgb(97, 104, 4);
+        background-color: rgb(34, 4, 104);
+        font-style: italic;
+ }
+
+ a:hover {
+     color: rgb(7, 10, 58);
+     background-color: rgb(97, 104, 4);
+     font-style: normal;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+
+ a:active {
+     color: rgb(78, 16, 16);
+     background-color: teal;
+     font-weight: bolder;
+ } /*CSS rule: if you're using them, you should specify pseudo-classes in a particular order. That order is :visited, :hover, and then :active.*/
+
+ em {
+    text-transform: capitalize;
+ }
+
+ #link3 {
+     line-height: 1.4 rem; /*Line-height is just line spacing and uses similar measurements to font-size*. letter-spacing and word-spacing are other available features on CSS that use the same %, em, rem measurements*/
+     font-family: serif, Georgia, 'Times New Roman', Times;
+ }
+
+ h4 {
+     font-family: sans-serif, 'Times New Roman', Times; 
+ }
+ #link5 {
+     text-decoration: line-through;
+ }
+
+ h5{
+     text-decoration: wavy underline;
+ }

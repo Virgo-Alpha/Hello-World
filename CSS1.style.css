@@ -1,0 +1,31 @@
+/* This style sheet is for 2ndpage.html*/
+
+nav {
+background-color:teal;
+}
+
+body {
+  background-image: url ("qAD.jpg") ; /*WHAT IS WRONG WITH MY CODE!!?*/
+  background-color: violet;
+}
+
+h1 {
+  color: red;
+  background-color: green; 
+}
+
+h1, h2 {
+  background-color: green; 
+} 
+#first, #second, #third, #fourth, #fifth {
+  color: darkred;
+}
+
+#sixth, #seventh, #eigth, #ninth, #tenth, #eleventh {
+  background-color: lemonchiffon ;
+}
+
+#third {
+  border: 2px solid rgb(5, 56, 5);
+}
+
