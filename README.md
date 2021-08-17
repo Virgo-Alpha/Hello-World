@@ -1,4 +1,4 @@
 # Hello-World
-Learning programming
-I am first learning HTML/CSS then Python/JS
-I want to be a techpreneur
+Learning programming <br>
+I am first learning HTML/CSS then Python/JS <br>
+I want to be a techpreneur <br>
