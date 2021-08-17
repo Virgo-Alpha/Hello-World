@@ -1,0 +1,46 @@
+/*CSS for the Transaction page*/
+
+body{
+    background-color: rgb(46, 15, 15);
+}
+
+#title {
+    background-color: rgb(39, 89, 117);
+    font-weight: 900;
+    color: wheat;
+}
+
+h1 {
+    color: rgb(8, 17, 16);
+    text-align: center;
+}
+
+h2{
+    color: rgb(167, 144, 45);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(18, 12, 71);
+    text-align: center;
+}
+
+p {
+    border: 1px solid rgb(165, 151, 94);
+    background-color: crimson;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#details {
+    background-color: yellowgreen;
+    padding: 15px;
+}
+
+footer {
+    padding-top: 288px;
+    color: whitesmoke;
+}
+
+
